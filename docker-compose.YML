@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  appserver:
+    container_name: pyserver
+    image: basic_python
+    ports:
+      - '5000:5000'
+    depends_on:
+      - postgres
+    networks:
+      - basic_python_network
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgre
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - basic_python_network
+
+networks:
+  basic_python_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
