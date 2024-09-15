@@ -16,12 +16,12 @@ the ski is saved securly so the user can reffer to older gear and compare both s
 - Change DATABASE_URI to your db user,pass,port,etc.
 ```
 # DB Commands:
-only when connectind to a new DB. run: python manage.py db init
+python manage.py db init                          # only when connectind to a new DB
 python manage.py db migrate --message"<MESSAGE>"  # checkout Data Base migrations after aplyed change.
-python manage.py db upgrade  # Update (commit) to DB migrations.
+python manage.py db upgrade                       # Update (commit) to DB migrations.
 # Docker Commands:
-docker-compose up  # create & run a container.
+docker-compose up     # create & run a container.
 docker-compose up -d  # Detached mode: Run containers in the background
-docker-compose ps  # to see curently running containers.
-docker-compose down  # stop container.
+docker-compose ps     # to see curently running containers.
+docker-compose down   # stop container.
 ```
