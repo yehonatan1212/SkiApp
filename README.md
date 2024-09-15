@@ -11,6 +11,7 @@ the ski is saved securly so the user can reffer to older gear and compare both s
 - **Api testing:** Swagger for api's on the server side. (very usful, insted of postman)
 - **Front:** using next.js, TypeScript saved in different repo - "/SkiApp_Front-Next.js"
 ### notes & usful commands
+- Open [http://localhost:5000] to use swagger
 - Change JWT margin for security (app/main/util/config.py)
 - Change DATABASE_URI to your db user,pass,port,etc.
 ```
